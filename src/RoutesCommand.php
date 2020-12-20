@@ -1,6 +1,6 @@
 <?php
 
-namespace Appzcoder\LumenRoutesList;
+namespace Marcha\LumenRoutesList;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
@@ -123,10 +123,13 @@ class RoutesCommand extends Command
      */
     protected function getMiddleware(array $action)
     {
-        return (isset($action['middleware']))
-            ? (is_array($action['middleware']))
-            ? join(", ", $action['middleware'])
-            : $action['middleware'] : '';
+        if (isset($action['middleware'])) {
+            if (is_array($action['middleware'])) {
+                return join(", ", $action['middleware']);
+            }
+            return $action['middleware'];
+        }
+        return '';
     }
 
     /**

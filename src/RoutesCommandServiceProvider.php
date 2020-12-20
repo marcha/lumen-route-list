@@ -13,6 +13,6 @@ class RoutesCommandServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->commands('Appzcoder\LumenRoutesList\RoutesCommand');
+        $this->commands('Marcha\LumenRoutesList\RoutesCommand');
     }
 }
