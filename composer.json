@@ -27,5 +27,7 @@
         "psr-4": {
             "Marcha\\LumenRoutesList\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
