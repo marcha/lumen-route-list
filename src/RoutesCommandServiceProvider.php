@@ -1,6 +1,6 @@
 <?php
 
-namespace Appzcoder\LumenRoutesList;
+namespace Marcha\LumenRoutesList;
 
 use Illuminate\Support\ServiceProvider;
 
