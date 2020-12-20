@@ -1,5 +1,5 @@
 {
-    "name": "appzcoder/lumen-routes-list",
+    "name": "marcha/lumen-routes-list",
     "license": "MIT",
     "description": "Display the route list of Lumen",
     "keywords": [
@@ -11,15 +11,21 @@
             "name": "Sohel Amin",
             "email": "sohelamincse@gmail.com",
             "homepage": "http://www.appzcoder.com"
+        },
+        {
+            "name": "Nikola Marčić",
+            "email": "marcic74@gmail.com",
+            "homepage": "http://www.delmax.rs"
         }
     ],
     "require": {
-        "php": ">=5.5.9",
-        "illuminate/support": "~5.0||^6.0"
+        "php": ">=7.3",
+        "illuminate/support": "^6.0||^7.0||^8.0",
+        "illuminate/console": "^6.0||^7.0||^8.0"
     },
     "autoload": {
         "psr-4": {
-            "Appzcoder\\LumenRoutesList\\": "src/"
+            "Marcha\\LumenRoutesList\\": "src/"
         }
     },
     "minimum-stability": "stable",
